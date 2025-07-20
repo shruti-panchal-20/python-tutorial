@@ -160,14 +160,54 @@ l = [3,-9,8,-6,-5,7,2]
 # print(f"largest number is {largest} with index {first_index} and second largest is {sec_largest} with index{sec_largest}")    
 
 
-a=[12,13,14,15]
+# a=[12,13,14,15]
 
-for i in range(len(a)-1):
-  if a [i]< a[i+1]:
-    continue 
-  else:
-    print("your list is not sorted")
-    break
+# for i in range(len(a)-1):
+#   if a [i]< a[i+1]:
+#     continue 
+#   else:
+#     print("your list is not sorted")
+#     break
 
-else:
-  print("your list is sorted") 
+# else:
+#   print("your list is sorted") 
+
+
+
+#20/07/25
+
+
+
+
+# a=[1,2,3,4]
+
+# print(type(a))
+
+# a = (1,2,3,4,5,5,5,5,5,5,5,5,5,5,5.5,print(),"hello")
+
+# count = a.count(5)
+
+# print(count)
+
+
+
+# # index = a.index(5)
+# # print(index)
+
+
+# a = {1,2,3,4,"hello",7,5,9,6}
+
+# for i in a:
+#   print(i)
+
+# a = [1,2,3,4]
+# a[3]=400
+# print(a)
+
+
+a = {1,2,3,4,5}
+b = {4,5,6,7,8,9}
+
+s = a^b
+
+print(s)
