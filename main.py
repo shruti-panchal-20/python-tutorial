@@ -177,9 +177,9 @@ l = [3,-9,8,-6,-5,7,2]
 #20/07/25
 
 
+#TUPLE:-
 
-
-# a=[1,2,3,4]
+# a=(1,2,3,4)
 
 # print(type(a))
 
@@ -191,23 +191,56 @@ l = [3,-9,8,-6,-5,7,2]
 
 
 
-# # index = a.index(5)
-# # print(index)
+# index = a.index(5)
+# print(index)
 
+# #SETS:-
 
 # a = {1,2,3,4,"hello",7,5,9,6}
 
 # for i in a:
-#   print(i)
+#  print(i)
 
 # a = [1,2,3,4]
 # a[3]=400
 # print(a)
 
 
-a = {1,2,3,4,5}
-b = {4,5,6,7,8,9}
+# a = {1,2,3,4,5}
+# b = {4,5,6,7,8,9}
 
-s = a^b
+# s = a^b
 
-print(s)
+# print(s)
+
+
+
+# a = {}
+# print (type(a))
+
+
+# d = {10:100,20:200,30:300}
+
+# print(d[10])  
+# d[10]= 67   #updating
+# d[50]=569   #creating
+# del d[30]   #deleting
+# print(d)
+
+
+#d = {1:10,2:20,3:30,4:40}
+
+# for i in d:
+#  print (i) 
+
+# f = d.get(20)
+# print(d.items())
+
+
+d = {1:10,2:20,3:30,4:40}
+sum = 0
+
+for i in d:
+  sum = sum + d[i]
+
+print(sum)
