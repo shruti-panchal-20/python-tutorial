@@ -215,7 +215,9 @@ l = [3,-9,8,-6,-5,7,2]
 
 
 
-# a = {}
+# 22/07/25------  *DICTIONARIES*
+
+# a = {}           #In this way dictionaries are created .
 # print (type(a))
 
 
@@ -228,7 +230,9 @@ l = [3,-9,8,-6,-5,7,2]
 # print(d)
 
 
-#d = {1:10,2:20,3:30,4:40}
+# #help(dict)
+
+# d = {1:10,2:20,3:30,4:40}
 
 # for i in d:
 #  print (i) 
@@ -237,10 +241,58 @@ l = [3,-9,8,-6,-5,7,2]
 # print(d.items())
 
 
-d = {1:10,2:20,3:30,4:40}
-sum = 0
+# d = {1:10,2:20,3:30,4:40}
+# sum = 0
 
-for i in d:
-  sum = sum + d[i]
+# for i in d:
+#   sum = sum + d[i]
 
-print(sum)
+# print(sum)
+
+
+# 1 : 3
+# 2 : 4
+# 3 : 2
+
+# a = [x,x,x,y,y,y,y,z,z]
+
+# a = [1,1,1,2,2,2,2,3,3]
+
+# d = {}
+# for i in a:
+#   if i in d.keys():
+#     d[i] +=1  
+#   else:
+#     d[i] = 1
+
+#     print(d) 
+
+
+
+#22/07/25
+
+# a = int(input("tell your number"))
+
+# try:
+#     print(10/a)
+
+# except ZeroDivisionError:
+#     print("sorry you cannot divide by 0")
+
+# print("ok i have done the division")          
+
+
+# a = int(input("tell your number"))
+
+# try:
+#     print(10/a)
+
+# except Exception as err:
+#      print(f"sorry there is an err as {err}")
+
+# else:
+#      print("good there is no exception")
+
+# print("ok i have done the division")
+
+
