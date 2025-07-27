@@ -120,7 +120,7 @@
 # print (l)
 
 
-l = [3,-9,8,-6,-5,7,2]
+# l = [3,-9,8,-6,-5,7,2]
 
 # print("positive elements are")
 # for i in l:
@@ -296,3 +296,125 @@ l = [3,-9,8,-6,-5,7,2]
 # print("ok i have done the division")
 
 
+# 26/07/25   object oriented progaramme .
+
+class Factory:
+  a = 12 #  attribute 
+
+  def hello(self): # method 
+    print("how are you")
+
+  print('hello i am getting initialised')
+
+
+obj= Factory()
+
+print(obj.a)
+
+
+print(Factory().a)
+
+Factory().hello()
+
+
+class Factory:
+  def __init__(self,material,zips,pockets): 
+    print(self)
+
+    self.material=material
+    self.zips=zips
+    self.pockets=pockets
+
+  def show(self):
+    print(f"your object details are {self.material},{self.zips},{self.pockets}") 
+
+
+
+reebok = Factory("leather",3,2)
+campus = Factory("nylon",4,1)
+
+# print(campus.pockets)
+# print(reebok.material)
+
+reebok.show()
+
+
+
+class Animal:
+  name = "lion" #class attribute
+
+  def __init__(self,age):
+   self.age = age #instance attribute
+
+  def show(self): #instance method 
+    print(f"how are you your age is {self.age}")
+
+  @classmethod
+  def hello(cls):
+    print("how are you brother") 
+
+  @staticmethod
+  def static():
+    print("how are you")
+
+
+obj = Animal(12)
+
+obj.show()
+
+class FactoryAnand: # parent class / super class 
+  a = " I am an attribute mentioned inside a Factory"
+  def hello(self):
+    print("hello i am a method inside a Factory")
+
+class Factorypune(FactoryAnand):   
+  pass
+
+obj = FactoryAnand()
+
+obj2 = Factorypune()
+
+
+print(obj2.hello())
+
+class Animal:
+  def __init__(self,name):
+    self.name = name       
+
+  def show(self):
+    print(f"hello your name is {self.name}")
+
+
+class Human(Animal):      
+    pass
+  
+
+animal1 = Animal("lion")
+person1 = Human("Shruti")
+
+
+# person1.show()
+animal1.show()
+
+
+class Animal:
+  def __init__(self,name):
+    self.name = name
+
+  def show(self):
+    print(f"hello your name is {self.name}")
+
+
+class Human(Animal):
+  def __init__(self, name,age):
+    super().__init__(name)   
+    self.age = age
+
+  def show(self):
+    print(f"hello your name is {self.name},{self.age}")    
+
+
+animal1 = Animal("lion")
+person1 = Human("shruti,17")
+
+person1.show()
